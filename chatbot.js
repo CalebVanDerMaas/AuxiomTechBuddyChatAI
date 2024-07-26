@@ -7,7 +7,7 @@ document.getElementById('chat-form').addEventListener('submit', async (e) => {
     messageInput.value = '';
   
     // Call the ChatGPT API
-    const response = await fetch("https://cryptic-atoll-73921.herokuapp.com/chat", {
+    const response = await fetch("https://auxiom-chat-buddy-ai.herokuapp.com/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
