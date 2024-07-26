@@ -18,6 +18,7 @@ document.getElementById('chat-form').addEventListener('submit', async (e) => {
 });
 
       const data = await response.json();
+      console.log(data);
       const chatGPTResponse = data.choices[0].text.trim();
         addMessage('ai', chatGPTResponse);
         });
